@@ -1,0 +1,82 @@
+body {
+    display: flex; /* Usamos Flexbox para centralizar a calculadora na tela */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center; /* Alinha verticalmente ao centro */
+    height: 100vh; /* Define a altura da viewport para que
+    a calculadora fique centralizada */
+    margin: 0; /* Remove a margem padrão do corpo */
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #f0f0f0; /* Cor de fundo da página */
+    }
+ 
+    .calculator {
+        display: grid; /* Usamos CSS Grid para organizar
+        o layout interno da calculadora */
+        grid-template-rows: 1fr 4fr; /* Definimos duas linhas: a primeira para
+        o display (1fr) e a segunda para os botões (4fr) */
+        width: 500px; /* Largura fixa da calculadora */
+        background-color: #fff; /* Cor de fundo da calculadora */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor da calculadora */
+        border-radius: 10px; /* Bordas arredondadas */
+        overflow: hidden; /* Garante que os elementos internos
+        não ultrapassem o container */
+        }
+ 
+        .display {
+            grid-row: 1 / 2; /* O display ocupa a primeira linha da grid */
+            font-size: 2em; /* Tamanho grande para os números */
+            padding: 20px; /* Espaçamento interno para o texto não encostar nas bordas */
+            text-align: right; /* Alinha o texto à direita */
+            border: none; /* Remove a borda padrão do input */
+            background-color: #222; /* Fundo preto */
+            color: #fff; /* Cor do texto branco */
+            }
+ 
+            .buttons {
+                display: grid; /* Define uma grid para os botões */
+                grid-template-columns: repeat(4, 1fr); /* Quatro colunas iguais */
+                grid-gap: 10px; /* Espaçamento entre os botões */
+                padding: 20px; /* Espaçamento ao redor dos botões */
+                }
+ 
+                .btn {
+                    font-size: 1.5em; /* Tamanho do texto grande para os botões */
+                    padding: 20px; /* Espaçamento interno para aumentar
+                    o tamanho dos botões */
+                    border: none; /* Remove as bordas dos botões */
+                    background-color: #f0f0f0; /* Cor de fundo padrão dos botões */
+                    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+                    border-radius: 5px; /* Bordas levemente arredondadas */
+                    transition: background-color 0.3s ease; /* Transição suave para
+                    a cor de fundo ao passar o mouse */
+                    }
+                    .btn:hover {
+                    background-color: #ddd; /* Cor de fundo mais escura ao passar o mouse */
+                    }
+ 
+                    .operator {
+                        background-color: #ffa500; /* Cor laranja para os operadores */
+                        color: white; /* Texto branco */
+                        }
+                        .operator:hover {
+                        background-color: #ff8c00; /* Cor laranja mais escura ao passar o mouse */
+                        }
+ 
+                        .equals {
+                            grid-column: span 2; /* O botão ocupa duas colunas */
+                            background-color: #00bfff; /* Cor azul para o botão de igualdade */
+                            color: white; /* Texto branco */
+                            }
+                            .equals:hover {
+                            background-color: #009acd; /* Cor azul mais escura ao passar o mouse */
+                            }
+ 
+                            .clear {
+                                grid-column: span 4; /* O botão ocupa todas as quatro colunas */
+                                background-color: #ff4500; /* Cor laranja avermelhada para o botão de limpar */
+                                color: white; /* Texto branco */
+                                }
+                                .clear:hover {
+                                background-color: #ff0000; /* Cor vermelha ao passar o mouse */
+                                }
+                                
