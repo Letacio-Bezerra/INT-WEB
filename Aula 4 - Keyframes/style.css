@@ -1,0 +1,43 @@
+@keyframes complex-animation{
+    0% {
+        transform: rotate(0) scale(1);
+        background-color: white;
+    }
+    50% {
+        transform: rotate(180deg) scale(1);
+        background-color: white;
+    }
+    /* volta pro normal */
+    100% {
+        transform: rotate(360deg) scale(1);
+        background-color: white;
+    }
+}
+
+.um{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    animation: complex-animation 2s ease-in-out infinite;
+}
+
+.dois{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+.dois:hover{
+    background-color: brown;
+    transform: rotate(360deg);
+}
+
+.tres{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    animation: complex-animation 2s ease-in-out infinite;
+}
