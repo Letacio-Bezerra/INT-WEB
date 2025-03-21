@@ -1,0 +1,21 @@
+.projeto1, .projeto2, .projeto3{
+    background-color: darkgrey;
+    height: 15rem;
+}
+
+footer{
+    background-color: rgb(203, 253, 253);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+
+}
+footer img{
+    width: 3rem;
+}
+
+
+
+.container{
+    margin: auto;
+}
