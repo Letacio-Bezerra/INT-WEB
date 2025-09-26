@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Reflexo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Jogo de Reflexo</h1>
+        <div id="scoreboard">
+            <p>Jogador 1: <span id="score1">0</span></p>
+            <p>Jogador 2: <span id="score2">0</span></p>
+        </div>
+        <div id="message"></div>
+        <div id="buttons">
+            <button id="btn1" onclick="playerClick(1)">Jogador 1 (F)</button>
+            <button id="btn2" onclick="playerClick(2)">Jogador 2 (J)</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
